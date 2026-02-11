@@ -1,0 +1,4 @@
+azure-devops==7.1.0b3
+msrest>=0.6.0
+
+
