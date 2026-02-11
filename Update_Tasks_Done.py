@@ -1,11 +1,15 @@
 from azure.devops.connection import Connection
 from msrest.authentication import BasicAuthentication
+from dotenv import load_dotenv
 import ssl
 import urllib3
 import requests
 import os
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
+
+# Cargar variables de entorno desde .env
+load_dotenv()
 
 # Configurar variables de entorno para deshabilitar SSL completamente
 os.environ['PYTHONHTTPSVERIFY'] = '0'
